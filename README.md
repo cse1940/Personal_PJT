@@ -4,7 +4,7 @@
 
 - 파이썬 설치 완료했습니다.
 
-![Visual Studio Code 설치 화면](C:\Users\HOME\Desktop\personal_PJT\README.assets)
+![Visual Studio Code 설치 화면](README.assets/image-20220801005203631.png)
 
 
 
