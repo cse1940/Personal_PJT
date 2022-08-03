@@ -1,6 +1,6 @@
 ## CHAPTER 1. ★
 
-## 1-1. 파이썬과 Visual Studio Code 설치하기
+### 1-1. 파이썬과 Visual Studio Code 설치하기
 
 - 파이썬과 Visual Studio Code를 설치하고 실행한 과정을 나만의 글로 기록하기
 
@@ -38,6 +38,7 @@ age = 24
 MBTI = "ISTP"
 height = 159.9
 have_boyfriend = True
+
 print(type(name)) # <class "str">
 print(type(age)) # <class "int">
 print(type(MBTI)) # <class "str">
@@ -56,6 +57,7 @@ price = 5670
 thousand = 5
 hundred = 6
 ten = 7
+
 print(f"""{price}원을 계산하려면 # 5670원을 계산하려면
 1000원 지폐 {thousand}장 # 1000원 지폐 5장
 100원 동전 {hundred}개 # 100원 동전 6개
@@ -71,6 +73,7 @@ birth = int(input("생년월일을 입력해 주세요. : ")) # 19991006
 year = birth // 10000
 month = (birth % 10000) // 100
 day = (birth % 10000) % 100
+
 print(f"{year}년 {month}월 {day}일 생이네요!") # 1999년 10월 6일 생이네요!
 ```
 
@@ -119,9 +122,41 @@ else:
 
 ```python
 count = 0
+
 for i in range(2, 101, 2):
     if i % 7 != 0:
         count += 1
 print(f"짝수이면서 7의 배수가 아닌 수의 갯수는 {count}")
+```
+
+## CHAPTER 2. ★★
+
+## 2-1. 윤년 판단하기
+
+- 사용자가 입력한 연도가 윤년인지 아닌지 판단하는 프로그램 만들어 보기
+
+```PYTHON
+year = int(input("연도를 입력하세요. : "))
+
+if year % 4 == 0 and year % 100 != 0:
+    print(f"{year}은 윤년입니다.")
+elif year % 400 == 0:
+    print(f"{year}은 윤년입니다.")
+else:
+    print(f"{year}은 윤년이 아닙니다.")
+```
+
+### 2-5. 팩토리얼 계산하기
+
+- n!은 1부터 n까지의 모든 정수를 곱한 것
+- 팩토리얼을 계산하는 코드를 만들어 보기
+
+```python
+number = int(input("숫자를 입력해 주세요. : "))
+count = 1
+
+for i in range(1, number + 1):
+    count *= i
+print(f"{number}!은 {count}입니다.")
 ```
 
