@@ -155,6 +155,22 @@ print(name[6:9]) # 최승은
 print(name[-7:-4]) # 최승은
 ```
 
+### 1-11. 입력받은 수의 평균 구하기
+
+- 숫자 7개를 입력받아 리스트에 저장하고 그 수들의 평균을 구해서 출력하는 프로그램 만들어 보기
+
+```python
+ls = []
+for i in range(7):
+    number = int(input("정수를 입력하세요. : ")) # 정수를 입력하세요. : 
+    ls.append(number)
+
+count = 0
+for l in ls:
+    count += l
+print(f"평균 : {count / 7}")
+```
+
 
 
 ## CHAPTER 2. ★★
