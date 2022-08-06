@@ -169,7 +169,17 @@ for l in ls:
 print(f"평균 : {count / 7}")
 ```
 
+### 1-12. 튜플과 딕셔너리로 문자열 길이 출력하기
 
+- 3개 이상의 문자열이 담긴 튜플을 선언하고, 딕셔너리에 각 문자열의 길이를 저장한 뒤 출력해 보기
+
+```python
+dic = {"hello" : len("hello"),
+       "I love python" : len("I love python"),
+       "My name is ..." : len("My name is ...")
+        }
+print(dic) # {'hello': 5, 'I love python': 13, 'My name is ...': 14}
+```
 
 ## CHAPTER 2. ★★
 
