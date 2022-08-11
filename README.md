@@ -433,6 +433,22 @@ print(max_(ls)) # 5
 - 초 단위로 입력받은 시간을 일, 시, 분, 초로 변환하여 출력하는 프로그램 만들어 보기(단, 사용하지 않는 단위는 출력하지 않음)
 
 ```python
+time = int(input("시간(초)을 입력해 주세요. : ")) # 84577
+print(str(time) + "초 ", end="= ")
+if time >= 86400:
+    temp = time // 86400
+    time -= temp * 86400
+    print(str(temp) + "일", end=" ")
+if time >= 3600:
+    temp = time // 3600
+    time -= temp * 3600
+    print(str(temp) + "시간", end=" ")
+if time >= 60:
+    temp = time // 60
+    time -= temp * 60
+    print(str(temp) + "분", end=" ")
+if time != 0:
+    print(str(time) + "초") # 84577 = 23시간 29분 37초
 ```
 
 ## CHAPTER 3. ★★★
@@ -445,5 +461,33 @@ print(max_(ls)) # 5
   3. 그 외의 글자는 소문자여야 합니다.
 
 ```python
+```
+
+### 3-3. 8월 달력 출력하기
+
+- 반복문과 조건문을 활용하여 2022년 8월의 달력을 출력하는 프로그램 만들어 보기(단, 아래 조건을 만족해야 함)
+  1. 8월 1일은 월요일이며, 8월의 마지막 날은 31일입니다.
+  2. 달력은 일요일부터 시작되며, 요일(일~토)을 상단에 출력해야 합니다.
+
+```python
+print("\t\t<8월 달력>\t\t")
+print("일\t월\t화\t수\t목\t금\t토")
+
+day = 1
+while day < 32:
+    if (day == 1):
+        print(f"\t{day}", end="\t")
+        day += 1
+    print(f"{day}", end="\t")
+    day += 1
+    if day % 7 == 0:
+        print() # 줄바꿈
+#                 <8월 달력>
+일      월      화      수      목      금      토
+        1       2       3       4       5       6       
+7       8       9       10      11      12      13      
+14      15      16      17      18      19      20      
+21      22      23      24      25      26      27      
+28      29      30      31  
 ```
 
