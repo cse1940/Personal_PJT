@@ -9,4 +9,4 @@ while day < 32:
     print(f"{day}", end="\t")
     day += 1
     if day % 7 == 0:
-        print()
+        print() # 줄바꿈
